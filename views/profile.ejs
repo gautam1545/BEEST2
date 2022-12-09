@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+  </head>
+  <style>
+    body{
+    background-color: rgb(148, 148, 148);
+}
+.nav-link{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    padding:15px 40px;
+    border:1px solid black;
+    border-radius:10px;
+}
+  </style>
+  <body>
+    <a class="nav-link" href="/reset?id=<%= results[0].id %>" > Change Password </a
+    >
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <table border="2">
+      <tr>
+        <th>ID</th>
+        <th>USERNAME</th>
+        <th>NAME</th>
+        <th>GENDER</th>
+        <th>PHONE NUMBER</th>
+        
+        
+    </tr>
+      <tr>
+        <td><%= results[0].id %></td>
+        <td><%= results[0].username %></td>
+        <td><%= results[0].fname %></td>
+        <td><%= results[0].gender %></td>
+        <td><%= results[0].pno %></td>      
+    </tr>
+    </table>
+  </body>
+</html>

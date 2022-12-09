@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+      body{
+          background-color: rgb(148, 148, 148);
+      }
+      .home{
+          width:11%;
+          margin: 200px auto;
+      }
+      .nav-link{
+          display: flex;
+          text-decoration: none;
+          justify-content: center;
+          align-items: center;
+          padding:15px 40px;
+          border:1px solid black;
+          border-radius:10px;
+      }
+      .nav-login{
+          background-color: white;
+          color:black;
+          margin-bottom:25px;
+      }
+      .nav-signup{
+          background-color: #5093E2;
+          color:white;
+      }
+    </style>
+</head>
+<body>
+    <div class="home">
+      <a class="nav-link nav-login" href="/login" target="_blank">Login <span class="sr-only"></span></a>
+      <a class="nav-link nav-signup" href="/signup" target="_blank">Sign Up</a>
+    </div>
+</body>
+</html>

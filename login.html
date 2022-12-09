@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body{
+          background-color: rgb(148, 148, 148);
+      }
+      .login-div{
+          width:250px;
+          margin: 150px auto;
+      }
+      .login{
+          width: 100%;
+          padding: 15px 20px;
+          margin: 10px 0;
+          display: inline-block;
+          border: 1px solid black;
+          border-radius: 10px;
+          box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <form action="\signin" method="post">
+      <div class="container login-div">
+
+        <div class="subcontainer">
+
+          <input class="login"
+            type="text"
+            name="username"
+            placeholder="Enter Username"
+            required
+          />
+          
+          <br />
+        </div>
+        <div class="subcontainer">
+
+          <input class="login"
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            required
+          /><br />
+
+        </div >
+
+        <div class="subcontainer"><input type="submit" id="submitbtn" class="login"/></div>
+      </div>
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reset</title>
+    <style>
+        body{
+           background-color: rgb(148, 148, 148);
+        }
+        .update-div{
+            width:250px;
+            margin:150px auto;
+        }
+        .login{
+            width: 100%;
+            padding: 15px 20px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="\reset_data" method="post">
+    <div class="container update-div">
+        <input type="hidden" name="username" value=<%= result[0].username %>><br/>
+        <div class="subcontainer"><input class="login" type="password" name="password" placeholder="Enter Old Password" required/><br /> </div>
+        <div class="subcontainer"><input class="login" type="password" name="new_password" placeholder="Enter New Password" required><br/></div>
+        <div class="subcontainer"><input class="login" type="submit" id="submitbtn"></div>
+    </div>
+</form>
+</body>
+</html>
